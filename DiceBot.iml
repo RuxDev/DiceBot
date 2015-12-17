@@ -36,5 +36,6 @@
     <orderEntry type="library" name="Maven: net.java.dev.jna:jna:4.2.1" level="project" />
     <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.10" level="project" />
     <orderEntry type="library" name="Maven: xyz.gghost:jdiscord:1.3" level="project" />
+    <orderEntry type="library" name="jdiscord" level="project" />
   </component>
 </module>

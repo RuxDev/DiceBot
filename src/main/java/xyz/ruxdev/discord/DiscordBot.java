@@ -1,23 +1,39 @@
 package xyz.ruxdev.discord;
 
-public class DiscordBot {
+import me.itsghost.jdiscord.message.MessageBuilder;
 
-    DiscordClient.get().login(args[0], args[1]);
+public class DiscordBot
+{
 
     public static void main(String... args){
+        DiscordClient.get().login(args[0], args[1]);
         try{
 
-            DiscordClient.get().getDispatcher().registerListener(new IListener<MessageReceivedEvent>(){
-                @Override public void receive(MessageReceivedEvent messageReceivedEvent) {
+            DiscordClient.get().getDispatcher().registerListener(new IListener<MessageReceivedEvent>()
+            {
+                @Override public void receive(MessageReceivedEvent messageReceivedEvent)
+                {
                     Message m = messageReceivedEvent.getMessage();
-                    if (m.getContent().startsWith(".meme")
-                        || m.getContent().startsWidth(".nicememe")) {
-                        new MessageBuilder().appendContent("MEMES REQUESTED:", MessageBuilder.Styles.UNDERLINE_BOLD_ITALICS)
-                                .appendContent(" http://niceme.me/").withChannel(messageReceivedEvent.getMessage().getChannel())
+
+                    if (m.getContent().startsWith("#r d4"))
+                    {
+                        new MessageBuilder()
+                                .appendContent("").withChannel(messageReceivedEvent.getMessage()
+                                .getChannel())
                                 .build();
-                    }else if (m.getContent().startsWitch(".clear"))
+                        new MessageBuilder().appendContent();
+                    }
+
+                    else if (m.getContent().startsWitch("#clear"))
+                    {
+
+                    }
                 }
-            })
+            });
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
         }
     }
 }
