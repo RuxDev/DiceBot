@@ -4,10 +4,10 @@ Author: Rux
 Affiliation: [Crit20Gaming](http://www.crit20gaming.com)
 
 ####Contents
--[Commands](##Commands)
--[Changelog](##Changelog)
+-[Commands](#Commands)
+-[Changelog](#Changelog)
 
-##Commands
+##Commands (All are started with !)
 -!roll - 
 -!
 -And more!
@@ -17,5 +17,5 @@ Affiliation: [Crit20Gaming](http://www.crit20gaming.com)
 ####0.0.1a
 -Added README.md
 -Added CNUv2 License
--Added DiscordBot.java
+-Added DiceBot.java
 -Added Maven Dependencies and Repositories
