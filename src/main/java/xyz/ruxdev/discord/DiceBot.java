@@ -1,5 +1,3 @@
-package xyz.ruxdev.discord;
-
 /**
  * DiceBot - Chat Moderator and RPG Bot for Crit20Gaming
  * Copyright (c)2015
@@ -22,10 +20,8 @@ package xyz.ruxdev.discord;
 import me.itsghost.jdiscord.DiscordAPI;
 import me.itsghost.jdiscord.DiscordBuilder;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.Date;
 import java.util.Properties;
 
 /**
@@ -49,10 +45,8 @@ public class DiceBot {
             if (inputStream != null) {
                 prop.load(inputStream);
             } else {
-                throw new FileNotFoundException(propFileName, " not found!");
+                System.err.println("File, login.properties, not found!");
             }
-
-            Date time = new Date(System.currentTimeMillis());
 
             //get the login value and send
             String user = prop.getProperty("user");
@@ -67,5 +61,6 @@ public class DiceBot {
         }
         return result;
     }
+
 
 }

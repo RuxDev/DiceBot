@@ -4,12 +4,14 @@ Author: Rux
 Affiliation: [Crit20Gaming](http://www.crit20gaming.com)
 
 ####Contents
--[Commands](#Commands)
--[Changelog](#Changelog)
+-[Commands](#commands)
+-[Changelog](#commands-all-are-started-with-)
 
 ##Commands (All are started with !)
--!roll - 
--!
+-\!roll
+
+-\!clear
+
 -And more!
 
 ##Changelog
